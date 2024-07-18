@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lose</title>
+</head>
+<body>
+  <center>
+    <h1>You LOST</h1>
+    <h2></h2>
+    <a href="random.html">Play again</a><br>
+    <a id="defineWord" target="_blank">Define Word</a><br>
+    <a href="create.html">Make your own!</a><br>
+    <img src="hangman/dead.png">
+  </center>
+  <script>
+    document.querySelector("h2").innerText="The word was: "+location.href.split("?")[1]
+    document.getElementById("defineWord").href="https://www.google.com/search?q=define+"+location.href.split("?")[1]
+  </script>
+</body>
+</html>
